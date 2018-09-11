@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A sample template to create a SNS topic
+Resources:
+  SampleSNSTopic:
+    Type: AWS::SNS::Topic
+    Properties: 
+      DisplayName: SampleSNSTopic
+      Subscription:
+      - Endpoint: "lnreddy.diddala@yahoo.com"
+        Protocol: email
+      TopicName: sample-sns-topic
